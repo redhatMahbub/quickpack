@@ -1,0 +1,112 @@
+
+//default dropdown css
+
+.menu-container ul,
+.menu-container .sub-siblings:after{
+    transition: .4s;
+}
+.menu-container  ul  li{
+    position: relative;
+}
+.menu-container  ul  li a{
+    margin-left: 0;
+}
+.menu-container ul li ul {
+  background: #fff none repeat scroll 0 0;
+  left: 0;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+  box-shadow: 0 0 10px rgba(0,0,0,.3);
+  margin: 0;
+  opacity: 0;
+  visibility: hidden;
+    z-index: 9;
+    top: 100%;
+}
+.menu-container ul.menu > li:nth-last-child(1) > ul,
+.menu-container ul.menu > li:nth-last-child(2) > ul,
+.menu-container ul.menu > li:nth-last-child(3) > ul{
+    right: 0;
+    left: auto;
+}
+.menu-container ul li ul li{
+    display: block;
+}
+.menu-container ul li ul li a{
+    display: block;
+    text-align: left;
+    margin: 0;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    padding: 5px 15px;
+    line-height: 30px;
+}
+.menu-container ul li ul li a:before{
+    content: '\f105';
+    font-family: 'fontawesome';
+    margin-right: 10px;
+    margin-left: 5px;
+    background-color: transparent;
+}
+
+.menu-container ul li ul li:hover > a,
+.menu-container ul li ul li.current_page_item > a,
+.menu-container ul li ul li.current-page-ancestor > a{
+    border-color: transparent;
+    background-color: #f3f2f2;
+}
+.menu-container ul li ul li ul{
+    left: 100%;
+    top: -1px;
+}
+.menu-container ul.menu > li:nth-last-child(4) ul > li > ul,
+.menu-container ul.menu > li:nth-last-child(5) ul > li > ul,
+.menu-container ul.menu > li:nth-last-child(1) ul > li > ul,
+.menu-container ul.menu > li:nth-last-child(2) ul > li > ul,
+.menu-container ul.menu > li:nth-last-child(3) ul > li > ul,
+.menu-container ul.menu > li > ul > li > ul > li > ul{
+    left: auto;
+    right: 100%;
+}
+.menu-container ul.menu > li:nth-last-child(1) > ul > li > ul > li > ul,
+.menu-container ul.menu > li:nth-last-child(2) > ul > li > ul > li > ul,
+.menu-container ul.menu > li:nth-last-child(3) > ul > li > ul > li > ul,
+.menu-container ul.menu > li:nth-last-child(4) > ul > li > ul > li > ul,
+.menu-container ul.menu > li:nth-last-child(5) > ul > li > ul > li > ul{
+    right: auto;
+    left: 100%;
+}
+.menu-container .sub-siblings{
+    position: relative;
+}
+.menu-container .sub-siblings:after {
+  content: "+";
+  margin-left: 7px;
+  position: absolute;
+  top: 50%;
+  right: -7px;
+  line-height: 20px;
+  margin-top: -10px;
+}
+.menu-container ul li ul li a.sub-siblings:after{
+    right: 20px;
+}
+.menu-container ul.menu > li:hover > ul{
+    top: 100%;
+    opacity: 1;
+    visibility: visible;
+}
+.menu-container ul.menu > li:hover > ul > li:hover > ul,
+.menu-container ul.menu > li:hover > ul > li:hover > ul > li:hover > ul{
+    top: -1px;
+    opacity: 1;
+    visibility: visible;
+}
+.menu-container ul > li:hover > a.sub-siblings:after{
+    content: '\f105';
+    font-family: "fontawesome";
+    transform: rotate(90deg);
+}
+.menu-container ul.menu > li > a.sub-siblings{
+    padding-right: 10px;
+}

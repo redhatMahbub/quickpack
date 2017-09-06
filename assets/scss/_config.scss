@@ -1,0 +1,55 @@
+$fFont: 'FontAwesome';
+$font: 'Roboto', sans-serif;
+
+
+//color-class
+
+.cPrimary{
+    color: $cPrimary;
+}
+.cPrimaryBg{
+    background-color: $cPrimary;
+}
+.cPrimaryBo{
+    border-color: $cPrimary !important;
+}
+
+
+.color2{
+    color: $color2;
+}
+.color2Bg{
+    background-color: $color2;
+}
+.color2Bo{
+    border-color: $color2;
+}
+
+
+.pColorBg{
+    background-color: $pColor;
+}
+.pColor{
+    color: $pColor;
+}
+.pbo{
+    border-color: $pColor;
+}
+
+.pColor2{
+    color: $pColor2;
+}
+
+//transition-class
+
+.trns{
+    @include transition(all .4s ease 0s);
+}
+
+//flex_class
+
+.flex_center{
+    @include display-flex(flex);
+    @include justify-content(center);
+    @include flex-column(column);
+}
